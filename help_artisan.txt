@@ -1,0 +1,17 @@
+php artisan make:model -h
+
+//Create model with facade and migration
+php artisan make:model Article -fm
+
+//Create migration
+php artisan make:migration create_article_tag_table
+
+//Run migration, create tables
+php artisan migrate
+
+
+//Data seed
+php artisan db:seed
+
+//Roolback migration and new seed
+php artisan migrate:refresh --seed
